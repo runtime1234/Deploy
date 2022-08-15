@@ -63,9 +63,17 @@ h2 {
     display: inline-block;
 }
 
+.news_page-link:hover {
+    background-color: rgba(238,238,238,0.6);
+}
+
 .news_page-link--active {
     background-color: #832b5b;
     color: white;
+}
+
+.news_page-link--active:hover {
+    background-color: #832b5b;
 }
 
 section{
