@@ -11,7 +11,7 @@ mysqli_close($link);
 for ($i=0; $i < $news_count_result['news_numbers']/5 ; $i++) {
     if ($i === 0) {
         $class = !isset($_GET['page']) || ($_GET['page'] - 1) == 0 ? 'news_page-link news_page-link--active' : 'news_page-link';
-        echo '<a class="' . $class .'" href="index.php?shift=' . ($i + 1) . '">' .( $i+1 ). '</a>';
+        echo '<a class="' . $class .'" href="index.php?page=' . ($i + 1) . '">' .( $i+1 ). '</a>';
         continue;
     }
     $class = isset($_GET['page']) && ($_GET['page'] - 1) == $i ? 'news_page-link news_page-link--active' : 'news_page-link';
