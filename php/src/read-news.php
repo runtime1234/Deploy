@@ -1,8 +1,8 @@
 <?php
-if(isset($_GET['page'])){
-    $page_id = $_GET['page']; //some_value
+if(isset($_GET['id'])){
+    $page_id = $_GET['id']; //some_value
 }
-$link= mysqli_connect("localhost", "root", "root",'news');
+$link= mysqli_connect("db", "root", "root",'test');
 
 $result = mysqli_query($link,"SELECT * FROM `news` WHERE id = $page_id ");
 $row = mysqli_fetch_assoc($result);
